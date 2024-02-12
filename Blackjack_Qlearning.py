@@ -132,10 +132,7 @@ class BlackjackAgent(nn.Module):
         if isinstance(obs, tuple) and len(obs) == 3:
             player_score, dealer_score, usable_ace = obs
         else:
-            player_score = 0
-            dealer_score = 0
-            usable_ace = False
-        
+            player_score, dealer_score, usable_ace = obs[0]
         
         if np.random.random() < self.epsilon:
             return np.random.choice(self.num_actions)
@@ -148,9 +145,7 @@ class BlackjackAgent(nn.Module):
         if isinstance(obs, tuple) and len(obs) == 3:
             player_score, dealer_score, usable_ace = obs
         else:
-            player_score = 0
-            dealer_score = 0
-            usable_ace = False
+            player_score, dealer_score, usable_ace = obs[0]
                 
         obs_tensor = torch.tensor([player_score, dealer_score, int(usable_ace)]).float()
 
