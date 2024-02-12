@@ -1,3 +1,5 @@
+![Sem título](https://github.com/Barboss4/Repositorio-de-Blackjack-Implementacao-Jogaveis-e-Modelos-de-Aprendizado-por-Reforco/assets/118753474/227a81e9-f3c0-4b70-8e0e-d119e538d969)
+
 # Blackjack_playable:
 A code that allows users to play the classic game of Blackjack directly in the terminal. With an intuitive interface and standard game rules, players can enjoy interactive matches against the computer.
 
